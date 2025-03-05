@@ -4,6 +4,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Test from "./pages/Test";
 import Layout from "./pages/layouts/Layout";
+import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
+import TestReducer from "./pages/TestReducer";
 function App() {
   return (
     <BrowserRouter>
@@ -12,10 +15,12 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="services" element={<Services />} />
+          <Route path="services/:serviceId" element={<ServiceDetail />} />
 
           <Route path="*" element={<Homepage />} />
         </Route>
-        <Route path="test" element={<Test />} />
+        <Route path="test" element={<TestReducer />} />
       </Routes>
     </BrowserRouter>
   )
