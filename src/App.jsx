@@ -7,6 +7,8 @@ import Layout from "./pages/layouts/Layout";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import TestReducer from "./pages/TestReducer";
+import ChildPage from "./pages/ChildPage";
+import QueryString from "./pages/QueryString";
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +22,8 @@ function App() {
 
           <Route path="*" element={<Homepage />} />
         </Route>
-        <Route path="test" element={<TestReducer />} />
+        <Route path="test" element={<ChildPage />} />
+        <Route path="query-string" element={<QueryString />} />
       </Routes>
     </BrowserRouter>
   )

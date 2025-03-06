@@ -22,6 +22,7 @@ function TestReducer() {
 
     console.log("called");
     return (
+        <>
         <Container>
             <Row>
                 <Col lg={4} className="mx-auto p-5">
@@ -43,6 +44,7 @@ function TestReducer() {
                 </Col>
             </Row>
         </Container>
+        </>
     )
 }
 
