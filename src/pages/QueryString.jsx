@@ -13,7 +13,8 @@ function QueryString() {
     console.log(loc.search);
 
     function handleClick(){
-        nav("/test");
+        // nav("/test");
+        // window.location.href = "";
     }
     return (
         <WrapContent>
